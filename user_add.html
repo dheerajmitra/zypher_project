@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+
+
+    </script>
+
+    <title>event Add</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary" ">
+        <a class="navbar-brand" href="#">
+
+            <img src="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Previous</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container" ng-app="">
+
+        <form name="form" action="http://127.0.0.1:8081/useradd" method="GET">
+            <div class="form-group">
+                <label for="name">User id</label>
+                <input type="text" class="form-control" ng-model="name1" id="name" placeholder="Enter user id" name="userid">
+            </div>
+            <div class="form-group">
+                <label for="email">Email id</label>
+                <input type="email" class="form-control" ng-model="email" id="email1" placeholder="Enter email id" name="email_id">
+            </div>
+            <div class="form-group">
+                <label for="event_id">Event Id</label>
+                <input type="text" ng-model="em1" class="form-control" id="eventid" placeholder="Enter event id" name="eventid">
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group col-12">
+
+                    <button type="submit" class="btn btn-primary " onclick="info()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
